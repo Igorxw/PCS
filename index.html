@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICHAUX2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    header {
+      position: relative;
+      z-index: 1;
+      background-color: #1F2D24;
+      padding: 2rem 0;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    main {
+      position: relative;
+      height: 500px;
+      background-image: url('https://media.licdn.com/dms/image/v2/C4D12AQEQ5MQNqMT9ng/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1606492815930?e=2147483647&v=beta&t=usNemx3oAaE0DJT-TThsimJu5nHkasIXqXY9q-hbH38');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      margin-right: 2rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .menu li {
+      margin-right: 1rem;
+    }
+
+    .menu li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .cta-button {
+      background-color: #1F2D24;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+header {
+  position: relative;
+  z-index: 1;
+  background-color: #000000;
+  padding: 2rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+main {
+  position: relative;
+  height: 500px;
+  background-image: url('https://gamesmag.cz/wp-content/uploads/2019/11/black_friday-1140x411.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 2rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-right: 1rem;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.cta-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+.our-work {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.work-item {
+  text-align: center;
+}
+
+.our-work-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 2rem;
+}
+
+.work-item img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+} 
+
+.work-item h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.work-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.view-more-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #000000;
+}
+
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.contact-info {
+  max-width: 40%;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #1F2D24;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #1F2D24;
+  text-decoration: none;
+}
+
+.contact-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #1F2D24;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #3c5140;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #1F2D24;
+  margin-bottom: 2rem;
+}
+
+.testimonial-item {
+  margin-bottom: 2rem;
+}
+
+.testimonial-item p {
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-item span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.work-item .old-price {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #999; /* Cor cinza clara */
+    text-decoration: line-through; /* Risca o preço antigo */
+    margin-right: 10px; /* Espaçamento à direita do preço */
+}
+
+.work-item .new-price {
+    font-size: 1.5em; /* Tamanho maior para o novo preço */
+    color: #e74c3c; /* Cor vermelha para o preço atual */
+    font-weight: bold; /* Deixar o novo preço em negrito */
+}
+
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+       </div>
+  </header>
+
+  <main>
+    <div class="content-container">
+      <div class="logo-container">
+        <img src="C:\Users\Aluno\Downloads\image-removebg-preview (1).png"  class="logo">
+      </div>
+      <ul class="menu">
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="index.html">Produtos</a></li>
+        <li><a href="orcamento.html">Contato</a></li>
+      </ul>
+      <a href="orcamento.html" class="cta-button">FAÇA UM ORÇAMENTO</a>
+    </div>
+  </main>
+  <section class="our-work">
+    <div class="our-work-container">
+     
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/n/a/narok_amd_gpu-01_5_19.jpg  " >
+        <h3>PC Gamer Mancer Krampus</h3>
+        <p>AMD Ryzen 5 5500, GeForce RTX 3060 12GB, 16GB DDR4, SSD 480GB</p>
+        <span class="old-price">R$ 7.000,00</span>
+        <span class="new-price">R$6.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/g/a/gabinete-gamer-hx600-black-rgb-001_6_3_1_1_1.jpg">
+        <h3>PC Gamer Pichau Highflyer</h3>
+        <p>Intel i7-12700K, GeForce RTX 4090 24GB, 32GB DDR4, SSD M.2 1TB</p>
+        <span class="old-price">R$ 8.000,00</span>
+        <span class="new-price">R$6.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/v/cv500-preto-water-semfan-001_1_1.jpg">
+        <h3>PC Gamer Pichau Basan II</h3>
+        <p>Intel i7-14700K, GeForce RTX 4070 12GB, 16GB DDR5, SSD M.2 480GB</p>
+        <span class="old-price">R$ 6.500,00</span>
+        <span class="new-price">R$6.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/a/mancer-cv300-gabinete-branco-001_8.jpg" >
+        <h3>PC Gamer Pichau Shiva</h3>
+        <p>AMD Ryzen 5 5600, Radeon RX 7700 XT 12GB, 16GB DDR4, SSD M.2 480GB</p>
+        <span class="old-price">R$ 7.000,00</span>
+        <span class="new-price">R$4.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/c/pc-completo-pichau-far-cry-0034.jpg">
+        <h3>PC Gamer Pichau Far Cry</h3>
+        <p>AMD Ryzen 5 5500, GeForce RTX 3060 12GB, 16GB DDR4, SSD M.2 480GB</p>
+        <span class="old-price">R$ 4.000,00</span>
+        <span class="new-price">R$3.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/v/o/voyager-one-branco-pichau-rog-01_2.jpg">
+        <h3>PC Gamer Pichau Highflyer</h3>
+        <p>AMD Ryzen 9 5900XT, GeForce RTX 4090 24GB, 32GB DDR4, SSD M.2 2TB</p>
+        <span class="old-price">R$ 10.000,00</span>
+        <span class="new-price">R$8.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/g/a/gabinete-evo700-gpu-vertical-001_4.jpg" >
+        <h3>PC Gamer Pichau Highflyer</h3>
+        <p>I9-14900K, GeForce RTX 4090 24GB, 128GB DDR5, SSD M.2 2TB</p>
+        <span class="old-price">R$ 8.000,00</span>
+        <span class="new-price">R$6.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/d/u/durin-d275m-bk-000-media-pcpichau-001v2_1_1.jpg">
+        <h3>PC Gamer Pichau Cicreu II</h3>
+        <p>Ryzen 3 4350GE, 16GB DDR4, SSD 240GB</p>
+        <span class="old-price">R$ 30.000,00</span>
+        <span class="new-price">R$2.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/o/pouter-3-rgb-water-cooler-01_3_9.jpg">
+        <h3>PC Gamer Pichau Mnemósine III</h3>
+        <p>Intel i5-14400F, GeForce GTX 1660 Super 6GB, 16GB DDR4, SSD M.2 480GB</p>
+        <span class="old-price">R$ 7.000,00</span>
+        <span class="new-price">R$6.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/g/a/gabinete-gamer-corsair-icue-7000x-branco-001.jpg" >
+        <h3>PC Gamer Pichau Corsair iCue</h3>
+        <p>AMD Ryzen 9 5950X, GeForce RTX 4090 24GB, 32GB DDR4, SSD M.2 2TB</p>
+        <span class="old-price">R$ 10.000,00</span>
+        <span class="new-price">R$8.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/c/pc-montado-r339-pichau-001_10.jpg">
+        <h3>PC Gamer Pichau Cicreu II</h3>
+        <p>5600, Radeon RX 6650 XT 8GB, 16GB DDR4, SSD 480GB</p>
+        <span class="old-price">R$ 90.000,00</span>
+        <span class="new-price">R$8.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+  
+      <div class="work-item">
+        <img src="https://media.pichau.com.br/media/catalog/product/cache/ef72d3c27864510e5d4c0ce69bade259/p/c/pc-pichau-a-r339-wh-cgpu-001.jpg">
+        <h3>PC Gamer Pichau Mnemósine III</h3>
+        <p>11400F, GeForce GTX 1060 6GB, 8GB DDR4, SSD 240GB</p>
+        <span class="old-price">R$ 6.000,00</span>
+        <span class="new-price">R$5.200,00</span><BR><BR>
+        <a href="#" class="view-more-button">COMPRAR</a>
+      </div>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICHAUX2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    header {
+      position: relative;
+      z-index: 1;
+      background-color: #000000;
+      padding: 2rem 0;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    main {
+      position: relative;
+      height: 500px;
+      background-image: url('https://media.licdn.com/dms/image/v2/C4D12AQEQ5MQNqMT9ng/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1606492815930?e=2147483647&v=beta&t=usNemx3oAaE0DJT-TThsimJu5nHkasIXqXY9q-hbH38');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      margin-right: 2rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .menu li {
+      margin-right: 1rem;
+    }
+
+    .menu li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .cta-button {
+      background-color: #000000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+header {
+  position: relative;
+  z-index: 1;
+  background-color: #000000;
+  padding: 2rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+main {
+  position: relative;
+  height: 500px;
+  background-image: url('https://gamesmag.cz/wp-content/uploads/2019/11/black_friday-1140x411.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 2rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-right: 1rem;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.cta-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+.our-work {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.work-item {
+  text-align: center;
+}
+
+.our-work-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 2rem;
+}
+
+.work-item img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+} 
+
+.work-item h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.work-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.view-more-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #000000;
+}
+
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.contact-info {
+  max-width: 40%;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #1F2D24;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #1F2D24;
+  text-decoration: none;
+}
+
+.contact-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #1F2D24;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #3c5140;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #1F2D24;
+  margin-bottom: 2rem;
+}
+
+.testimonial-item {
+  margin-bottom: 2rem;
+}
+
+.testimonial-item p {
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-item span {
+  font-size: 0.9rem;
+  color: #666;
+}
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+       </div>
+  </header>
+
+  <main>
+    <div class="content-container">
+      <div class="logo-container">
+        <img src="C:\Users\Aluno\Downloads\image-removebg-preview (1).png"  class="logo">
+      </div>
+      <ul class="menu">
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="index.html">Produtos</a></li>
+        <li><a href="orcamento.html">Contato</a></li>
+      </ul>
+    </div>
+  <main>
+   
+  </main>
+
+  <section class="our-work">
+    <div class="our-work-container">
+      <!-- Repetir a estrutura das imagens e links de produtos conforme necessário -->
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="testimonial-item">
+        <p>"Os PCs são incríveis! A performance é impressionante e superaram minhas expectativas. Recomendo a todos."</p>
+        <span>- João Almeida</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"A qualidade do PC é excepcional! Roda todos os programas de forma fluída e rápida, muito satisfeito."</p>
+        <span>- Carla Souza</span>
+      </div>
+      <div class="testimonial-item">
+        <p>"Excelente escolha de componentes! O PC funciona perfeitamente, com ótima performance e ótimo custo-benefício."</p>
+        <span>- Felipe Costa</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Vamos conversar e fazer um orçamento?</h2>
+        <p>Envie sua pergunta para <a href="mailto:contato@pichaux2.com.br">contato@pichaux2.com.br</a> ou entre em contato com seus especialistas locais usando os detalhes de contato abaixo.</p>
+        <p><strong>(24) 2222 - 1826 | (24) 2222 - 1370</strong></p>
+        <p><a href="mailto:contato@pichaux2.com.br">contato@pichaux2.com.br</a></p>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
